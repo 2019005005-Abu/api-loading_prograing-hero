@@ -1,0 +1,30 @@
+h1{
+    text-align: center;
+}
+#post-container{
+    display:  grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 10px;
+    text-align: center;
+}
+.post{
+    border: 1px solid red;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 600px) {
+   #post-container{
+    grid-template-columns: repeat(1,1fr);
+    padding: 5px 10px;
+   }
+  }
+
+  @media only screen and (max-width: 900px) {
+    #post-container{
+     grid-template-columns: repeat(2,1fr);
+     padding: 5px 10px;
+    }
+   }
